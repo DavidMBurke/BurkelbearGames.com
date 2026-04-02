@@ -746,9 +746,52 @@ p:last-child {
 .fade-in-stagger.is-visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.5s; }
 
 /* --------------------------------------------------------------------------
-   9. Game Cards
+   9. Game Feature & Cards
    -------------------------------------------------------------------------- */
 
+/* Single-game feature layout */
+.game-feature {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.game-feature__image {
+  position: relative;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg), 0 0 60px rgba(200, 150, 42, 0.12);
+  border: 1px solid var(--color-border);
+}
+
+.game-feature__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.game-feature__image:hover img {
+  transform: scale(1.02);
+}
+
+.game-feature__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.game-feature__desc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Legacy grid for multi-game pages */
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1598,6 +1641,11 @@ p:last-child {
   .footer__bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Game feature */
+  .game-feature {
+    grid-template-columns: 1fr;
   }
 
   /* Game detail */
