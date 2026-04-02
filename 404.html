@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Burkelbear Games</title>
+  <meta name="description" content="The page you were looking for could not be found." />
+
+  <!-- Tell search engines not to index the 404 page -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVIGATION — Same as index.html
+       ====================================================================== -->
+  <header>
+    <nav class="nav nav--scrolled" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+
+        <a href="index.html" class="nav__logo" aria-label="Burkelbear Games home">
+          <span class="nav__logo-icon" aria-hidden="true">🐾</span>
+          Burkelbear Games
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html#games"  >Games</a></li>
+          <li><a href="index.html#about"  >About</a></li>
+          <li><a href="index.html#press"  >Press</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <button
+          class="nav__hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </button>
+
+      </div>
+
+      <nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="index.html#games"  >Games</a>
+        <a href="index.html#about"  >About</a>
+        <a href="index.html#press"  >Press</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ====================================================================
+         404 CONTENT
+         ==================================================================== -->
+    <section class="not-found" aria-labelledby="not-found-heading">
+
+      <!-- Background texture (same as body, but we add a subtle glow) -->
+      <div style="
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background:
+          radial-gradient(ellipse 60% 50% at 50% 50%, rgba(107, 95, 138, 0.12) 0%, transparent 70%),
+          radial-gradient(ellipse 40% 40% at 30% 30%, rgba(200, 150, 42, 0.06) 0%, transparent 60%);
+      " aria-hidden="true"></div>
+
+      <div class="not-found__inner" style="position: relative; z-index: 1;">
+
+        <!-- Large "404" display number -->
+        <p class="not-found__code" aria-hidden="true">404</p>
+
+        <h1 class="not-found__title" id="not-found-heading">Page Not Found</h1>
+
+        <p class="not-found__desc">
+          The grimoire doesn't contain this page — it may have been moved, renamed,
+          or it never existed in this realm.
+        </p>
+
+        <div class="btn-group" style="justify-content: center;">
+          <a href="index.html" class="btn btn-primary">
+            Return Home
+          </a>
+          <a href="index.html#games" class="btn btn-secondary">
+            See Our Games
+          </a>
+        </div>
+
+        <!-- Helpful links -->
+        <nav style="margin-top: 3rem;" aria-label="Helpful links">
+          <p style="font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-text-dim); margin-bottom:1rem;">
+            You might be looking for
+          </p>
+          <ul style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; list-style:none;">
+            <li>
+              <a href="games/grimorium.html" style="font-size:0.9rem; color:var(--color-text-muted);">
+                Grimorium
+              </a>
+            </li>
+            <li>
+              <a href="index.html#about" style="font-size:0.9rem; color:var(--color-text-muted);">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="index.html#press" style="font-size:0.9rem; color:var(--color-text-muted);">
+                Press
+              </a>
+            </li>
+            <li>
+              <a href="index.html#contact" style="font-size:0.9rem; color:var(--color-text-muted);">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================
+       FOOTER — Same as index.html
+       ====================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-icon" aria-hidden="true">🐾</span>
+            Burkelbear Games
+          </div>
+          <p class="footer__tagline">
+            Atmospheric games. Unforgettable worlds.
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html#games"      >Games</a>
+          <a href="index.html#about"      >About</a>
+          <a href="index.html#press"      >Press</a>
+          <a href="index.html#contact"    >Contact</a>
+          <a href="games/grimorium.html"  >Grimorium</a>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <!-- COPYRIGHT: Update year as needed -->
+        <p class="footer__copyright">© 2024 Burkelbear Games. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

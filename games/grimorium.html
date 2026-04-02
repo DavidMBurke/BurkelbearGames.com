@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TITLE: Update with your game's full SEO title -->
+  <title>Grimorium — Burkelbear Games</title>
+
+  <!-- META DESCRIPTION: Replace with your actual game description (150–160 chars ideal) -->
+  <meta name="description" content="Grimorium is a dark fantasy grimoire RPG by Burkelbear Games. Unravel forbidden arcane mysteries before they unravel you." />
+
+  <!-- Open Graph / Social sharing -->
+  <!-- OG TAGS: Update these once you have key art / banner images -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Grimorium — Burkelbear Games" />
+  <meta property="og:description" content="A dark fantasy grimoire RPG. Unravel forbidden arcane mysteries before they unravel you." />
+  <!-- <meta property="og:image" content="https://burkelbear.games/images/grimorium-og-banner.jpg" /> -->
+  <!-- <meta property="og:url"   content="https://burkelbear.games/games/grimorium.html" /> -->
+
+  <!-- Favicon -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Note: stylesheet path goes up one level since we are in /games/ -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVIGATION
+       ====================================================================== -->
+  <header>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+
+        <!-- Logo links back to homepage -->
+        <a href="../index.html" class="nav__logo" aria-label="Burkelbear Games home">
+          <span class="nav__logo-icon" aria-hidden="true">🐾</span>
+          Burkelbear Games
+        </a>
+
+        <!-- Desktop nav links — all point back to index.html sections -->
+        <ul class="nav__links" role="list">
+          <li><a href="../index.html#games"  >Games</a></li>
+          <li><a href="../index.html#about"  >About</a></li>
+          <li><a href="../index.html#press"  >Press</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+
+        <!-- Mobile hamburger button -->
+        <button
+          class="nav__hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile menu -->
+      <nav class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="../index.html"         >← All Games</a>
+        <a href="../index.html#games"  >Games</a>
+        <a href="../index.html#about"  >About</a>
+        <a href="../index.html#press"  >Press</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ====================================================================
+         GAME HERO
+         ==================================================================== -->
+    <section class="game-hero" id="hero" aria-label="Grimorium hero">
+
+      <!-- HERO BACKGROUND IMAGE: The .game-hero::before pseudo-element in CSS controls the background.
+           When you have actual key art, add to CSS:
+             .game-hero::before {
+               background-image: url('../images/grimorium-hero.jpg');
+               background-size: cover;
+               background-position: center top;
+             }
+           Keep the gradient overlay in the background shorthand to darken it. -->
+
+      <div class="game-hero__content">
+
+        <!-- Back link -->
+        <a href="../index.html#games" class="game-hero__back">
+          ← Back to all games
+        </a>
+
+        <!-- Game title -->
+        <h1 class="game-hero__title">Grimorium</h1>
+
+        <!-- Genre / platform tags -->
+        <div class="game-hero__tags">
+          <!-- GAME TAGS: Update with actual genre, platforms, and release status -->
+          <span class="tag">RPG</span>
+          <span class="tag">Dark Fantasy</span>
+          <span class="tag">Deck Building</span>
+          <!-- PLATFORM TAGS: Uncomment and update as platforms are confirmed -->
+          <!-- <span class="tag">PC</span> -->
+          <!-- <span class="tag">Mac</span> -->
+          <span class="tag tag--accent">Coming Soon</span>
+          <!-- RELEASE DATE TAG: Replace "Coming Soon" with actual release date when known:
+               <span class="tag tag--accent">2025</span> -->
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="game-hero__ctas">
+
+          <!-- STEAM WISHLIST LINK: Replace href="#" with your actual Steam store page URL.
+               Example: href="https://store.steampowered.com/app/YOUR_APP_ID/Grimorium/" -->
+          <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            ⭐ Wishlist on Steam
+            <!-- STEAM STORE URL: Update href above ↑ -->
+          </a>
+
+          <!-- This button smooth-scrolls to the #videos section below -->
+          <a href="#videos" class="btn btn-secondary">
+            ▶ Watch Trailer
+          </a>
+
+          <!-- ITCH.IO LINK: Uncomment when you have an itch.io page -->
+          <!-- <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            Play on itch.io
+          </a> -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /.game-hero -->
+
+
+    <!-- ====================================================================
+         ABOUT THE GAME
+         ==================================================================== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="game-about__grid">
+
+          <!-- Description column -->
+          <div class="game-about__description fade-in">
+            <span class="section-label">About the Game</span>
+            <h2 id="about-heading">
+              <!-- GAME ABOUT HEADING: Replace with your preferred section heading -->
+              A Grimoire Holds All Secrets
+            </h2>
+            <div class="divider"></div>
+
+            <!-- GAME DESCRIPTION: Replace these placeholder paragraphs with your actual game description.
+                 Aim for 3–5 paragraphs. Focus on tone, setting, core loop, and emotional hook.
+                 Keep it engaging — this is your game's elevator pitch to potential players. -->
+
+            <p>
+              <!-- PARAGRAPH 1: Setting and premise -->
+              [Replace with a compelling opening paragraph that sets the scene and introduces the world
+              of Grimorium. What is the setting? What's the atmosphere? Draw the reader in.]
+            </p>
+
+            <p>
+              <!-- PARAGRAPH 2: Core gameplay / mechanics overview -->
+              [Replace with a description of the core gameplay loop. How do players interact with the world?
+              What makes the mechanics interesting and unique? Mention key systems briefly.]
+            </p>
+
+            <p>
+              <!-- PARAGRAPH 3: Story hook / narrative tone -->
+              [Replace with details about the narrative. Who is the protagonist? What is the central conflict?
+              What themes does the game explore? Give a sense of the story without spoilers.]
+            </p>
+
+            <p>
+              <!-- PARAGRAPH 4: Optional — multiplayer, content scope, inspirations -->
+              [Optional: Mention scope (hours of content, number of characters, world size), inspiration
+              titles, or any special features worth highlighting before the features list.]
+            </p>
+
+          </div><!-- /.game-about__description -->
+
+          <!-- Features list column -->
+          <aside class="game-features fade-in">
+            <h3>Key Features</h3>
+
+            <ul class="features-list">
+              <!-- FEATURES: Replace each <li> text with your actual game features.
+                   Aim for 6–10 concise bullet points. Strong verbs, concrete details. -->
+              <li>
+                <!-- FEATURE 1 -->
+                [Replace: Core mechanic or hook — e.g., "Build and evolve your grimoire across 100+ unique spells"]
+              </li>
+              <li>
+                <!-- FEATURE 2 -->
+                [Replace: World / exploration feature — e.g., "Explore a handcrafted open world of cursed ruins and forgotten libraries"]
+              </li>
+              <li>
+                <!-- FEATURE 3 -->
+                [Replace: Narrative feature — e.g., "Branching storyline with 4 distinct endings shaped by your choices"]
+              </li>
+              <li>
+                <!-- FEATURE 4 -->
+                [Replace: Combat or systems feature — e.g., "Strategic turn-based combat with deck-building elements"]
+              </li>
+              <li>
+                <!-- FEATURE 5 -->
+                [Replace: Character or progression feature — e.g., "Deep character customization with 12 arcane disciplines to master"]
+              </li>
+              <li>
+                <!-- FEATURE 6 -->
+                [Replace: Art or audio feature — e.g., "Original orchestral soundtrack and fully voiced cutscenes"]
+              </li>
+              <li>
+                <!-- FEATURE 7: Uncomment when ready -->
+                <!-- [Replace: Additional feature] -->
+              </li>
+            </ul>
+
+          </aside><!-- /.game-features -->
+
+        </div><!-- /.game-about__grid -->
+
+      </div>
+    </section><!-- /#about -->
+
+
+    <!-- ====================================================================
+         VIDEOS & TRAILERS
+         ==================================================================== -->
+    <section class="section section--alt" id="videos" aria-labelledby="videos-heading">
+      <div class="container">
+
+        <div class="fade-in">
+          <span class="section-label">Media</span>
+          <h2 id="videos-heading">Videos &amp; Trailers</h2>
+          <p class="section-subtitle">
+            <!-- VIDEOS INTRO: Update or remove -->
+            Trailers, gameplay, and developer diaries.
+          </p>
+        </div>
+
+        <div class="videos-grid fade-in-stagger">
+
+          <!-- VIDEO EMBED 1 -->
+          <!-- YOUTUBE EMBED -->
+          <div>
+            <p style="font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-accent); margin-bottom:0.75rem; font-weight:600;">
+              <!-- VIDEO 1 LABEL: e.g., "Announce Trailer", "Gameplay Reveal" -->
+              Announce Trailer
+              <!-- LABEL: Update to match actual video content -->
+            </p>
+            <div class="video-embed-wrapper">
+              <!-- YOUTUBE EMBED: Replace the entire .video-placeholder div below with your iframe.
+                   Example:
+                   <iframe
+                     width="560" height="315"
+                     src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                     title="Grimorium — Announce Trailer"
+                     frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     allowfullscreen
+                   ></iframe>
+              -->
+              <div class="video-placeholder" role="img" aria-label="Video placeholder — add YouTube embed here">
+                <div class="video-placeholder__play" aria-hidden="true">
+                  <!-- Play triangle icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <p class="video-placeholder__text">Add YouTube Embed Here</p>
+              </div>
+            </div>
+          </div><!-- /VIDEO 1 -->
+
+          <!-- VIDEO EMBED 2 -->
+          <!-- YOUTUBE EMBED -->
+          <div>
+            <p style="font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-accent); margin-bottom:0.75rem; font-weight:600;">
+              <!-- VIDEO 2 LABEL: e.g., "Gameplay Preview", "Dev Diary #1" -->
+              Gameplay Preview
+              <!-- LABEL: Update to match actual video content -->
+            </p>
+            <div class="video-embed-wrapper">
+              <!-- YOUTUBE EMBED: Replace the entire .video-placeholder div below with your iframe.
+                   Example:
+                   <iframe
+                     width="560" height="315"
+                     src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
+                     title="Grimorium — Gameplay Preview"
+                     frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     allowfullscreen
+                   ></iframe>
+              -->
+              <div class="video-placeholder" role="img" aria-label="Video placeholder — add YouTube embed here">
+                <div class="video-placeholder__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <p class="video-placeholder__text">Add YouTube Embed Here</p>
+              </div>
+            </div>
+          </div><!-- /VIDEO 2 -->
+
+        </div><!-- /.videos-grid -->
+
+      </div>
+    </section><!-- /#videos -->
+
+
+    <!-- ====================================================================
+         SCREENSHOTS
+         ==================================================================== -->
+    <section class="section" id="screenshots" aria-labelledby="screenshots-heading">
+      <div class="container">
+
+        <div class="fade-in">
+          <span class="section-label">Gallery</span>
+          <h2 id="screenshots-heading">Screenshots</h2>
+          <p class="section-subtitle">
+            <!-- SCREENSHOTS INTRO: Update or remove -->
+            A glimpse into the world of Grimorium.
+          </p>
+        </div>
+
+        <!-- SCREENSHOTS GRID: Replace each .screenshot-placeholder div with an <img> tag.
+             Example for each slot:
+             <img
+               src="../images/grimorium-screenshot-1.jpg"
+               alt="Grimorium screenshot — [describe what's shown]"
+               loading="lazy"
+             />
+             Recommended screenshot resolution: 1920×1080 (16:9 ratio).
+             The CSS grid handles layout automatically. -->
+        <div class="screenshots-grid fade-in-stagger">
+
+          <!-- SCREENSHOT 1: Replace with actual screenshot image -->
+          <div class="screenshot-placeholder" role="img" aria-label="Screenshot placeholder 1">
+            <span class="screenshot-placeholder__label">Screenshot 1</span>
+          </div>
+
+          <!-- SCREENSHOT 2: Replace with actual screenshot image -->
+          <div class="screenshot-placeholder" role="img" aria-label="Screenshot placeholder 2">
+            <span class="screenshot-placeholder__label">Screenshot 2</span>
+          </div>
+
+          <!-- SCREENSHOT 3: Replace with actual screenshot image -->
+          <div class="screenshot-placeholder" role="img" aria-label="Screenshot placeholder 3">
+            <span class="screenshot-placeholder__label">Screenshot 3</span>
+          </div>
+
+          <!-- SCREENSHOT 4: Replace with actual screenshot image -->
+          <div class="screenshot-placeholder" role="img" aria-label="Screenshot placeholder 4">
+            <span class="screenshot-placeholder__label">Screenshot 4</span>
+          </div>
+
+          <!-- SCREENSHOT 5: Replace with actual screenshot image -->
+          <div class="screenshot-placeholder" role="img" aria-label="Screenshot placeholder 5">
+            <span class="screenshot-placeholder__label">Screenshot 5</span>
+          </div>
+
+          <!-- SCREENSHOT 6: Replace with actual screenshot image -->
+          <div class="screenshot-placeholder" role="img" aria-label="Screenshot placeholder 6">
+            <span class="screenshot-placeholder__label">Screenshot 6</span>
+          </div>
+
+        </div><!-- /.screenshots-grid -->
+
+      </div>
+    </section><!-- /#screenshots -->
+
+
+    <!-- ====================================================================
+         PRESS / MEDIA
+         ==================================================================== -->
+    <section class="section section--alt" id="press" aria-labelledby="press-heading">
+      <div class="container">
+
+        <div class="fade-in">
+          <span class="section-label">Press</span>
+          <h2 id="press-heading">Press &amp; Media</h2>
+        </div>
+
+        <div class="game-press__inner fade-in-stagger">
+
+          <!-- Press contact block -->
+          <div class="game-press__block">
+            <h3>Press Contact</h3>
+            <p style="color: var(--color-text-muted); font-size:0.92rem; margin-bottom:1rem;">
+              <!-- PRESS CONTACT COPY: Update as needed -->
+              For review codes, assets, or interviews, please reach out to our press contact.
+            </p>
+            <!-- PRESS EMAIL: Replace with your actual press email -->
+            <a href="mailto:press@burkelbear.games" class="contact__email-link">
+              ✉ press@burkelbear.games
+            </a>
+          </div>
+
+          <!-- Press kit download block -->
+          <div class="game-press__block">
+            <h3>Assets &amp; Press Kit</h3>
+            <p style="color: var(--color-text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+              <!-- PRESS KIT COPY: Update with what's included in the kit -->
+              Download logos, key art, screenshots, and factsheet in one package.
+            </p>
+
+            <!-- PRESS KIT DOWNLOAD: Replace href="#" with actual press kit file or folder URL.
+                 Example: href="../press/grimorium-presskit.zip" -->
+            <a href="#" class="btn btn-secondary" download>
+              ⬇ Download Grimorium Press Kit
+              <!-- PRESS KIT FILE: Update href above ↑ -->
+            </a>
+
+            <!-- PRESSKIT.HTML LINK: If you use presskit() or dopresskit.com, add link here -->
+            <!-- <a href="../press/grimorium/" class="btn btn-ghost" style="margin-top:0.75rem;">
+              View Online Press Kit →
+            </a> -->
+          </div>
+
+        </div><!-- /.game-press__inner -->
+
+      </div>
+    </section><!-- /#press -->
+
+  </main>
+
+
+  <!-- ========================================================================
+       FOOTER — Same as index.html
+       ====================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-icon" aria-hidden="true">🐾</span>
+            Burkelbear Games
+          </div>
+          <p class="footer__tagline">
+            Atmospheric games. Unforgettable worlds.
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="../index.html#games"  >Games</a>
+          <a href="../index.html#about"  >About</a>
+          <a href="../index.html#press"  >Press</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="../index.html"        >Home</a>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <!-- COPYRIGHT: Update year as needed -->
+        <p class="footer__copyright">© 2024 Burkelbear Games. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS path goes up one level since we are in /games/ -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

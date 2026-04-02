@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/burke/Repos/BurkelbearGames.com/css\")",
+      "Bash(mkdir -p \"C:/Users/burke/Repos/BurkelbearGames.com/js\")",
+      "Bash(mkdir -p \"C:/Users/burke/Repos/BurkelbearGames.com/games\")",
+      "Read(//c/Users/burke/.claude/projects/c--Users-burke-Repos-BurkelbearGames-com/**)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\burke\\.claude\\projects\\c--Users-burke-Repos-BurkelbearGames-com"
+    ]
+  }
+}
