@@ -911,26 +911,12 @@ p:last-child {
    11. Press Section
    -------------------------------------------------------------------------- */
 
-.press__grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.press__info {
-  background-color: var(--color-bg-card);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--card-radius);
-  padding: 2rem;
-}
-
-.press__info h3 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-accent);
+.press__contact-row {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .press__contact-email {
@@ -950,10 +936,19 @@ p:last-child {
   color: var(--color-accent-light);
 }
 
-.press__quotes {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+.press__videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.press__video-title {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .quote-card {
@@ -1585,7 +1580,7 @@ p:last-child {
   }
 
   /* Press */
-  .press__grid {
+  .press__videos {
     grid-template-columns: 1fr;
   }
 
